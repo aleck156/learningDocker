@@ -10,7 +10,7 @@ declare(strict_types=1);
 require_once "../Transactions.php";
 
 
-$transaction = new Transaction();
+$transaction = new Transaction(15, "Transaction 1");
 echo '<pre>';
 var_dump($transaction);
 echo '</pre>';
