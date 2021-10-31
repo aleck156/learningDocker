@@ -17,4 +17,12 @@ class Transaction{
     public function applyDiscount(float $discount){
       $this->amount -= $this->amount * $discount / 100;
     }
+
+    public function getAmount(): float{
+      return $this->amount;
+    }
+
+    public function getDescription(): string{
+      return $this->description;
+    }
 }
