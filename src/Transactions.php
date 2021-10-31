@@ -13,4 +13,8 @@ class Transaction{
     public function addTax(float $rate) {
       $this->amount += $this->amount * $rate / 100;
     }
+
+    public function discount(float $discount){
+      $this->amount -= $this->amount * $discount / 100;
+    }
 }
