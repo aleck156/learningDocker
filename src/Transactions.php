@@ -10,6 +10,11 @@ class Transaction{
       $this->description = $description;
     }
 
+    public function __destruct()
+    {
+      
+    }
+
     public function addTax(float $rate): Transaction {
       $this->amount += $this->amount * $rate / 100;
       return $this;
