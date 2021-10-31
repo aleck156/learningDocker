@@ -12,7 +12,7 @@ class Transaction{
 
     public function __destruct()
     {
-      
+      echo 'Destruct '.$this->description.'<br/>';
     }
 
     public function addTax(float $rate): Transaction {
