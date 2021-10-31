@@ -9,4 +9,8 @@ class Transaction{
       $this->amount = $amount;
       $this->description = $description;
     }
+
+    public function addTax(float $rate) {
+      $this->amount += $this->amount * $rate / 100;
+    }
 }
