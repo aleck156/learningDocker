@@ -12,7 +12,7 @@ require_once "../Transactions.php";
 
 $transaction = new Transaction(100, "Transaction 1");
 $transaction->addTax(8);
-$transaction->discount(3);
+$transaction->applyDiscount(3);
 echo '<pre>';
 var_dump($transaction);
 echo '</pre>';

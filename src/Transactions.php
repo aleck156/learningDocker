@@ -14,7 +14,7 @@ class Transaction{
       $this->amount += $this->amount * $rate / 100;
     }
 
-    public function discount(float $discount){
+    public function applyDiscount(float $discount){
       $this->amount -= $this->amount * $discount / 100;
     }
 }
