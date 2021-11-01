@@ -6,9 +6,19 @@ class Transaction{
     
     public function __construct(float $amount, string $description)
     {
-      $this->amount = $amount;
-      $this->description = $description;
+      $this->amount       = $amount;
+      $this->description  = $description;
     }
+
+    /* PHP 8.0 version
+    you can delete first 2 declarations - amount and description
+
+    public function __construct(
+      private float $amount,
+      private string $description
+    ){
+    }
+    */
 
     public function __destruct()
     {
