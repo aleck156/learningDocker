@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+require_once '../app/PaymentGateway/Stripe/Transaction.php';
+require_once '../app/Notification/Email.php';
+require_once '../app/PaymentGateway/Paddle/CustomerProfile.php';
+require_once '../app/PaymentGateway/Paddle/Transaction.php';
+
+
 /*
 // phpinfo();
 
