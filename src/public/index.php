@@ -7,6 +7,8 @@ declare(strict_types=1);
 // print_r($_SERVER);
 // echo '</pre>';
 
+require_once "../PaymentProfile.php";
+require_once "../Customer.php";
 require_once "../Transactions.php";
 
 
@@ -22,6 +24,14 @@ $amount = $transaction->getAmount();
 // example: database connection
 // unset($transaction);
 // $transaction = null;
+
+$transaction->customer = new Customer();
+
+echo $transaction->customer?->paymentProfile->id;
+
+// null coalesce opeator ?? does not work with methods
+// throws an error when a method doesn't exist
+// whereas with values, it just picks the second one
 
 echo '<pre>';
 var_dump($transaction);

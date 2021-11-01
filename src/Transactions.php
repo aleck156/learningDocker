@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 class Transaction{
+    public ?Customer $customer=null;
+
     public float $amount;
     public string $description;
     

@@ -1,7 +1,7 @@
 <?php
 
 class Customer{
-  public ?PaymentProfle $paymentProfile = null;
+  public ?PaymentProfile $paymentProfile = null;
 
 
 }
