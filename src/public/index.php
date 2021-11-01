@@ -19,6 +19,7 @@ $amount = $transaction->getAmount();
 
 // how to destroy an object, calling destructor
 // use it only when you have an actual use-case for that
+// example: database connection
 // unset($transaction);
 // $transaction = null;
 
