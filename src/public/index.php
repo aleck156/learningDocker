@@ -7,6 +7,11 @@ require_once '../app/Notification/Email.php';
 require_once '../app/PaymentGateway/Paddle/CustomerProfile.php';
 require_once '../app/PaymentGateway/Paddle/Transaction.php';
 
+use App\PaymentGateway\Paddle\Transaction;
+
+$paddleTransaction = new Transaction();
+
+var_dump($paddleTransaction);
 
 /*
 // phpinfo();
