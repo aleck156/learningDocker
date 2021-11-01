@@ -16,6 +16,12 @@ $transaction = (new Transaction(100, "Transaction 1"))
 
 $amount = $transaction->getAmount();
 
+
+// how to destroy an object, calling destructor
+// use it only when you have an actual use-case for that
+// unset($transaction);
+// $transaction = null;
+
 echo '<pre>';
 var_dump($transaction);
 var_dump($amount);
