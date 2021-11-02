@@ -21,3 +21,7 @@ services:
       - ./nginx:/etc/nginx/conf.d
 
 # to save resources, php composer should be run in a separate container
+# get inside a container:   docker exec -it learning-app bash
+# check composer version:   composer -V
+# add a package:            composer require ramsey/uuid
+# optional:                 composer init - initialize set up of php composer
