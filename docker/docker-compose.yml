@@ -19,3 +19,5 @@ services:
     volumes:
       - ../src:/var/www
       - ./nginx:/etc/nginx/conf.d
+
+# to save resources, php composer should be run in a separate container
